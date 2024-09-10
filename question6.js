@@ -1,5 +1,5 @@
 const mainHeading=document.querySelector('#main-heading');
-mainHeading.style.textAlign='right';
+mainHeading.style.textAlign='center';
 
 const fruits=document.querySelector('.fruits');
 fruits.style.backgroundColor='gray';
