@@ -1,0 +1,114 @@
+/* when we are using external css then we have to select the element to which we want to apply the style */
+
+/* to select the elements there are 4 methods */
+
+/* using Tag Name */
+
+/*
+form{
+    background-color: lightblue;
+    padding: 30px;
+}
+button{
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+/* using Id */ /* when ever we are selecting elements with the help of "Id" we have to use "#" */
+/*
+#username{
+    background-color: yellow;
+    border: none;
+}
+
+/* using Class */ /* when we are selecting element with the help of "class" we use "." */
+
+/*
+.btn{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+}
+
+/* using Attributes */ /* if we are using Tag name then we have to provide the value of the attribute that is there inside the starting tag of the element */
+
+/*
+label[for="username"]{
+    color: yellow;
+}
+    */
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid gray;
+      }
+      
+      #header input {
+        width: 30%;
+        border: 2px solid gray;
+        border-radius: 5px;
+      }
+      
+      h2 {
+        margin: 0;
+      }
+      
+      form {
+        margin: 30px;
+        width: 100%;
+      }
+      
+      form input {
+        height: 35px;
+        width: 40%;
+        border: 2px solid yellowgreen;
+        border-radius: 5px;
+        margin-top: 5px;
+      }
+      
+      form button {
+        height: 40px;
+        width: 10%;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        background-color: yellowgreen;
+      }
+      
+      ul {
+        list-style-type: none;
+        background-color: pink;
+        padding: 5px;
+        margin: 0 30px;
+        width: 50%;
+        border-radius: 5px;
+      }
+      
+      li {
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: lightyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .delete-btn {
+        align-self: flex-end;
+        background-color: tomato;
+        border: none;
+        border-radius: 2px;
+        padding: 5px 18px;
+      }
+      
+      .edit-btn {
+        align-self: flex-end;
+        background-color: lightblue;
+        border: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+        margin-top: 5px;
+      }
