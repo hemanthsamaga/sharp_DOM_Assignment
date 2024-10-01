@@ -13,4 +13,4 @@ function handleFormSubmit(event){
    localStorage.setItem('Phone',phonenumber);
 }
 document.getElementById('userForm').onsubmit = handleFormSubmit;
-//module.exports=handleFormSubmit;
+module.exports=handleFormSubmit;
