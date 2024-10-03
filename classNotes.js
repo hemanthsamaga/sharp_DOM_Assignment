@@ -220,7 +220,7 @@ document.cookie = 'lastName=Smith; expires=' + new Date(9999,0,1).toUTCString()
 // to view the cookies i.e. all of the cookies info at once is through
 
 console.log(document.cookie);
-*/
+
 
 function saveToLocalStoage(event){
     event.preventDefault();
@@ -234,3 +234,21 @@ function saveToLocalStoage(event){
     localStorage.setItem('email', email);
     localStorage.setItem('phonenumber',phonenumber);
 }
+  */
+ 
+let myObj={
+    name: "Domenic",
+    age: 56
+  };
+
+  let myObj_serialized = JSON.stringify(myObj);
+  //console.log(myObj_serialized); 
+
+  localStorage.setItem('myObj', myObj_serialized);
+  //console.log(localStorage);
+
+  //localStorage.setItem('myObj', myObj);
+  //console.log(localStorage);
+
+  let myObj_deserialized = JSON.parse(localStorage.getItem('myObj'));
+  console.log(myObj_deserialized);
