@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,4 +36,44 @@
     let myObj_deserialized = JSON.parse(localStorage.getItem('myObj'));
     console.log(myObj_deserialized);
   </script> 
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form{
+      background-color: orange;
+      text-align: center;
+    }
+    input{
+      font-size: 30px;
+      color: blue;
+      width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" onsubmit="onsignup(event)">
+    <label> Name</label><br>
+    <input type="text" name="username" required/><br>
+    <label> Email</label><br>
+    <input type="email" name="email" required/><br>
+    <label> Password</label><br>
+    <input type="password" name="password" required/><br>
+    <button> Sign Up </button>
+  </form>
+  
+  <script>
+    function onsignup(event){
+      event.preventDefault();
+      console.log(event.target.username.value);
+    }
+  </script>
+</body>
 </html>
